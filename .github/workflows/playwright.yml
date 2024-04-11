@@ -39,6 +39,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm ci
+          npm install -g artillery@latest
           npx playwright install
 
       - name: Execute load tests
