@@ -40,7 +40,7 @@ jobs:
         run: |
           npm ci
           npm install -g artillery@latest
-          npx playwright install
+          npx playwright install --with-deps
 
       - name: Execute load tests
         uses: artilleryio/action-cli@v1
