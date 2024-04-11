@@ -38,7 +38,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install @playwright/test@1.42.1
+          npm ci
           npm install -g artillery@latest
           npx playwright install --with-deps
 
