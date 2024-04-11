@@ -39,7 +39,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm ci
-          npx playwright@1.42.0 install
+          npx playwright install
 
       - name: Execute load tests
         uses: artilleryio/action-cli@v1
